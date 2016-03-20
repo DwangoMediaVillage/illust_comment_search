@@ -1,0 +1,2 @@
+# illust_comment_search
+コメント生成ハッカソン用レポジトリ
