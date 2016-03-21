@@ -9,14 +9,15 @@ seiga_comment_example
 
 1. 必要なファイルをダウンロードする
 
-ダウンロードURLは別途申請して手に入れてください。
+ダウンロード用signitureは別途申請して手に入れてください。
 
 ```bash
+signiture="XXXXX"
 mkdir data
-wget https://nico-opendata.jp/******/nico_comment_feature_v1.hdf5 ./data
-wget https://nico-opendata.jp/******/nico_comment_feature_v1_vocabulary.txt ./data
-wget https://nico-opendata.jp/******/nico_illust_tag_v2.hdf5 ./data
-wget https://nico-opendata.jp/******/seiga_comment.tsv ./data
+wget "https://nico-opendata.jp/comment-hackathon/nico_comment_feature_v1.hdf5$signiture" -O ./data/nico_comment_feature_v1.hdf5
+wget "https://nico-opendata.jp/comment-hackathon/nico_comment_feature_v1_vocabulary.txt$signiture" -O ./data/nico_comment_feature_v1_vocabulary.txt
+wget "https://nico-opendata.jp/comment-hackathon/nico_illust_tag_v2.hdf5$signiture" -O ./data/nico_illust_tag_v2.hdf5
+wget "https://nico-opendata.jp/comment-hackathon/seiga_comment.tsv$signiture" -O ./data/seiga_comment.tsv
 ```
 
 2. 学習しやすいコメントに絞って、ランダムにソートする
