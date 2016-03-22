@@ -1,7 +1,9 @@
 git+http://github.com/nico-opendata/niconico_chainer_models.git#egg=niconico_chainer_models
 
-chainer
+chainer >= 1.5.1
 ipython
 scikit-learn
 numpy
+scipy
 pipe
+pillow
